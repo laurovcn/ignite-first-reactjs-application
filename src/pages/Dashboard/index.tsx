@@ -20,14 +20,14 @@ export function Dashboard() {
   return (
 
     <TransactionsProvider>
-        <Header onOpenNewTransactionModal={handleOpenNewTransactionModal}/> 
-        <NewTransactionModal 
-          isOpen ={isNewTransactionModalOpen}
-          onRequestClose={handleCloseNewTransactionModal}/> 
-        <Container>     
-          <Summary />
-          <TransactionsTable/>   
-        </Container>
+      <Header onOpenNewTransactionModal={handleOpenNewTransactionModal}/> 
+      <NewTransactionModal 
+        isOpen ={isNewTransactionModalOpen}
+        onRequestClose={handleCloseNewTransactionModal}/> 
+      <Container>     
+        <Summary />
+        <TransactionsTable/>   
+      </Container>
     </TransactionsProvider>   
   );
 }
