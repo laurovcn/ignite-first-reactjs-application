@@ -5,18 +5,21 @@ import {
 } from "react-router-dom";
 
 import { Login } from './pages/Login';
-import { Home } from './pages/Home';
+import { GlobalStyle } from './styles/global';
+import { Dashboard } from './pages/Dashboard';
 
 export const App = () => {
 
   return ( 
-
+    <>
+      <GlobalStyle />
       <BrowserRouter>  
         <Routes>
           <Route path="/" element={<Login/>} /> 
-          <Route path="/Dashboard" element={<Home/>} /> 
+          <Route path="/Dashboard" element={<Dashboard/>} />          
         </Routes>          
-      </BrowserRouter>   
+      </BrowserRouter>
+    </>   
   );
 }
 
